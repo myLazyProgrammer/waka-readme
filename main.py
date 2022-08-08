@@ -263,7 +263,7 @@ def fetch_stats() -> Any:
 
     Returns statistics as JSON string
     """
-    tries, statistic = 3, {}
+    tries, statistic = 10, {}
     logger.debug('Fetching WakaTime statistics')
     encoded_key: str = str(b64encode(bytes(wk_i.waka_key, 'utf-8')), 'utf-8')
 
